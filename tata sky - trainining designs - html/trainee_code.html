@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATA SKY - Trainee Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="d-flex align-items-center">
+            <ul class="main_menu">
+                <li><a href="landing-page.html">Home</a></li>
+                <li><a href="create_batch.html">Create Batch</a></li>
+                <li><a href="trainee_code.html">Inbox</a></li>
+                <li><a href="#" style="border: none;">Logout</a></li>
+            </ul>
+            <div class="username">ASM_4214_1</div>
+            <i class="fas fa-bars" id="menu"></i>
+        </div>
+    </nav>
+
+    <main class="container main">
+        <div class="outline-gray-box">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="Batch ID" class="form-label">Batch ID</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Training Type" class="form-label">Training Type</label>
+                    <select class="form-select">
+                        <option selected>Select Training Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Training Plan Date" class="form-label">Training Plan Date</label>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Training Start Date" class="form-label">Training Start Date</label>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Training End Date" class="form-label">Training End Date</label>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Session type" class="form-label">Session Type</label>
+                    <select class="form-select">
+                        <option selected>Select Session Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Location" class="form-label">Location</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Trainer Name" class="form-label">Trainer Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="Training Module" class="form-label">Training Module</label>
+                    <select class="form-select">
+                        <option selected class="first">Select Training Module</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="outline-gray-box mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="Trainee Code" class="form-label">Trainee Code</label>
+                    <select class="form-select">
+                        <option selected class="first">Select Training Code</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <div>
+                        <button type="button" class="btn btn-primary me-2">Validate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mt-4 mb-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Training Table
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="table-responsive">
+                            <table id="example" class="table table-bordered"
+                                style="width:100%; border: 1px solid #ccc;">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/custome.js"></script>
+
+
+</body>
+
+</html>

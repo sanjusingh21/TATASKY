@@ -1,0 +1,59 @@
+.dashboard_table th {
+    background-color: #5987c6;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.my_cst_btn {
+    border: none;
+    background-color: #064497;
+    padding: 6px 15px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.my_cst_btn:hover {
+    background-color: #1456ad;
+}
+
+.mtb-10 {
+    margin: 10px 0px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+nav {
+    width: 100%;
+    background: linear-gradient(to right, rgb(6, 68, 151) 0%, rgba(89, 135, 195, 0.7) 52%, rgba(78, 133, 207, 0.6) 100%);
+    padding: 15px;
+    float: left;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .main_nav {
+    float: right;
+}
+
+nav .main_nav a {
+    color: #fff;
+    padding: 0px 15px;
+    border-right: 1px solid #fff;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+nav .main_nav a:last-child {
+    border-right: none;
+}
+
+.main_content {
+    padding: 15px;
+    background: rgba(236, 236, 236, 0.5);
+    margin-top: 20px;
+    border-radius: 2px;
+}

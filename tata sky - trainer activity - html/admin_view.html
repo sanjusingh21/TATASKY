@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATA SKY - Admin View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="d-flex align-items-center">
+            <ul class="main_menu">
+                <li><a href="landing-page.html">Home</a></li>
+                <li><a href="create_batch.html">Create Batch</a></li>
+                <li><a href="trainee_code.html">Inbox</a></li>
+                <li><a href="#" style="border: none;">Logout</a></li>
+            </ul>
+            <div class="username">ASM_4214_1</div>
+            <i class="fas fa-bars" id="menu"></i>
+        </div>
+    </nav>
+
+    <main class="container main activity_container">
+        <div class="outline-gray-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tabs_container">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <div class="tabs_left_heading">
+                                <i class="fas fa-user-shield text-muted"></i>
+                                <span class="ms-1"><strong>Admin View</strong></span>
+                            </div>
+                            <button class="nav-link active" id="v-pills-Day1-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Day1" type="button" role="tab" aria-controls="v-pills-Day1"
+                                aria-selected="true">Day 1</button>
+
+                            <button class="nav-link" id="v-pills-Day2-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Day2" type="button" role="tab" aria-controls="v-pills-Day2"
+                                aria-selected="false">Day 2</button>
+                        </div>
+                        <div class="tab-content main_tab_content" id="v-pills-tabContent">
+                            <!-- day 1 activity start -->
+                            <div class="tab-pane fade show active" id="v-pills-Day1" role="tabpanel"
+                                aria-labelledby="v-pills-Day1-tab">
+                                <div class="row mx-0">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="" class="form-label">Lable 1</label>
+                                        <select class="form-select">
+                                            <option selected>--Select--</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="" class="form-label">Lable 2</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="" class="form-label">Lable 3</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-12 text-end mb-5">
+                                        <button type="button" class="btn btn-primary me-2">Get Details</button>
+                                        <button type="button" class="btn btn-success">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- day 1 activity end -->
+
+                            <!-- day 2 activity start -->
+                            <div class="tab-pane fade" id="v-pills-Day2" role="tabpanel"
+                                aria-labelledby="v-pills-Day2-tab">Day 2</div>
+                            <!-- day 2 activity end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custome.js"></script>
+
+</body>
+
+</html>

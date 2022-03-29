@@ -1,0 +1,287 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: #f9f8ff;
+}
+
+
+
+/* create batch page */
+nav{
+    background: #fff;
+    padding: 15px 25px !important;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav .main_menu{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+nav .main_menu a{
+    text-decoration: none;
+    padding: 0px 20px;
+    border-right: 1px solid #ccc;
+    color: #333333;
+    font-weight: 500;
+}
+nav .main_menu a:hover{
+    color: #0953ad;
+}
+nav .username{
+    font-weight: 600;
+    color: #0953ad;
+}
+.main{
+    margin-top: 60px;
+}
+.outline-gray-box{
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.activity_container .outline-gray-box{
+    padding: 0px;
+    margin-bottom: 60px;
+}
+.activity_container .main_tab_content{
+    padding: 30px 10px;
+}
+
+.main .form-label{
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.main input,
+.main select,
+.main textarea{
+    background-color: transparent;
+    border-color: #c5c5c5;
+    outline: none;
+}
+.main button{
+    min-width: 90px;
+}
+.main .btn-sm{
+    min-width: 60px;
+    padding: 2px 5px !important;
+}
+.main button.btn-primary{
+    background: #5087c8;
+    border-color: #5087c8;
+}
+.main button.btn-primary:hover{
+    background: #5299e0;
+    border-color: #5299e0;
+}
+
+.table thead{
+    background: #5087c8;
+    color: #fff;
+    white-space: nowrap;
+}
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td{
+    border-bottom-width: 1px;
+}
+table.table-bordered.dataTable tbody tr:last-child td{
+    border-bottom-width: 0px;
+}
+
+
+.accordion-item{
+    background: transparent;
+}
+
+table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable td:last-child, table.table-bordered.dataTable td:last-child {
+    border-right-width: 0px;
+}
+
+table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:after {
+    top: 10px;
+}
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_desc_disabled:before {
+    top: 5px;
+}
+.page-item.disabled .page-link,
+.page-link{
+    background-color: transparent;
+    border-color: transparent;
+}
+.page-link:focus{
+    outline: none !important;
+    box-shadow:none;
+}
+.page-link {
+    padding: 0.275rem .75rem;
+    border-radius: 50%;
+}
+.page-link:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+.page-item.active .page-link{
+    background-color: #4e84c3;
+    border-color: #4e84c3;
+}
+#menu{
+    display: none;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+/* new  */
+.main_tab_content{
+    width: calc(100% - 200px);
+}
+.main_tab_content .dropdown-item:hover{
+    background-color: #eef7ff;
+    cursor: pointer;
+}
+
+.main_tab_content .dropdown-menu{
+    z-index: 9;
+}
+.main_tab_content .dropdown-toggle::after{
+    content: none;
+}
+
+.activity_container .nav-pills{
+    background: #e0e8f1;
+}
+
+.activity_container .nav-pills .nav-link{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    color: #000;
+    border-bottom: 1px solid #fff;
+    min-width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 200px;
+}
+.activity_container .nav-pills .nav-link::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #e0e8f1;
+    position: absolute;
+    right: -5px;
+    top: 42%;
+    transform:rotate(45deg) translateY(-50%);
+    -webkit-transform:rotate(45deg) translateY(-50%);
+    -moz-transform:rotate(45deg) translateY(-50%);
+    -ms-transform:rotate(45deg) translateY(-50%);
+    -o-transform:rotate(45deg) translateY(-50%);
+}
+
+.activity_container .nav-pills .nav-link.active{
+    background-color: #78bafd;
+    color: #fff;
+}
+.tabs_left_heading{
+    padding: 12px 20px;
+    border-bottom: 1px solid #fff;
+}
+#session_cancel_modal .modal-header{
+    background-color: #78bafd !important;
+    color: #fff;
+}
+#session_cancel_modal .btn-close{
+    color: #fff;
+    opacity: 0.8;
+}
+#session_cancel_modal .btn-close:hover{
+    opacity: 1;
+}
+
+textarea{
+    resize: none;
+}
+.activity_container .table td,
+.activity_container .table th{
+    vertical-align: middle;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+.tabs_container{
+    display: flex;
+}
+
+@media screen and (max-width:991px) {
+    nav .main_menu a{
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    #menu{
+        display: block;
+    }
+    .main_menu{
+        position: absolute;
+        flex-direction: column;
+        background: #fff;
+        padding: 10px 20px;
+        top: 72px;
+        width: 200px;
+        right: 17px;
+        box-shadow: 1px 0px 10px 1px rgb(0 0 0 / 15%);
+        display: none !important;
+    }
+    .main_menu.show{
+        display: flex !important;
+    }
+    nav .main_menu a{
+        border: none;
+        padding: 7px 0px;
+        display: inline-block;
+    }
+    .logo img{ 
+         width: 160px;
+    }
+    .container.activity_container{
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .tabs_container{
+        flex-direction: column;
+    }
+    .main_tab_content {
+        width: 100%;
+    }
+    .activity_container .nav-pills .nav-link{
+        max-width: 100%;
+    }
+    .activity_container .nav-pills .nav-link::after{
+        right: initial;
+        left: -18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .logo img{ 
+         width: 120px;
+    }
+    .main_menu{
+        top: 62px;
+    }
+}
